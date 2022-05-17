@@ -8,7 +8,7 @@ use Laravel\Nova\Http\Requests\NovaRequest;
 
 class TranslatableFieldMixin
 {
-    public function translatable()
+    public function translatableNova()
     {
         return function ($overrideLocales = [], $options = []) {
             $locales = FieldServiceProvider::getLocales($overrideLocales);
